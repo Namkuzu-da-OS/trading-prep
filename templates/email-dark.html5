@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>$title$</title>
+<style>
+/* Base */
+body {
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 24px 20px;
+}
+
+/* Headers */
+h1 {
+    color: #7eb8ff;
+    border-bottom: 2px solid #2a2a4a;
+    padding-bottom: 12px;
+    font-size: 24px;
+    margin-top: 0;
+}
+h2 {
+    color: #a0c4ff;
+    border-bottom: 1px solid #2a2a4a;
+    padding-bottom: 8px;
+    font-size: 20px;
+    margin-top: 28px;
+}
+h3 {
+    color: #c0d8ff;
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 14px;
+}
+th {
+    background-color: #16213e;
+    color: #7eb8ff;
+    text-align: left;
+    padding: 10px 12px;
+    border: 1px solid #2a2a4a;
+    font-weight: 600;
+}
+td {
+    padding: 8px 12px;
+    border: 1px solid #2a2a4a;
+    background-color: #1a1a2e;
+}
+tr:nth-child(even) td {
+    background-color: #16213e;
+}
+
+/* Code / monospace for prices */
+code {
+    font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+    background-color: #16213e;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #80ffdb;
+}
+pre {
+    background-color: #0f0f23;
+    border: 1px solid #2a2a4a;
+    border-radius: 6px;
+    padding: 16px;
+    overflow-x: auto;
+    font-size: 13px;
+}
+pre code {
+    background: none;
+    padding: 0;
+}
+
+/* Lists */
+ul, ol {
+    padding-left: 24px;
+}
+li {
+    margin-bottom: 6px;
+}
+
+/* Links */
+a {
+    color: #7eb8ff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Horizontal rule */
+hr {
+    border: none;
+    border-top: 1px solid #2a2a4a;
+    margin: 24px 0;
+}
+
+/* Blockquote */
+blockquote {
+    border-left: 3px solid #7eb8ff;
+    margin: 16px 0;
+    padding: 8px 16px;
+    background-color: #16213e;
+    border-radius: 0 4px 4px 0;
+}
+
+/* Strong/bold */
+strong {
+    color: #ffffff;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    .container {
+        padding: 12px 10px;
+    }
+    table {
+        font-size: 12px;
+    }
+    th, td {
+        padding: 6px 8px;
+    }
+    h1 { font-size: 20px; }
+    h2 { font-size: 17px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+$body$
+</div>
+</body>
+</html>
