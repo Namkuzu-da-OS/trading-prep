@@ -4,7 +4,7 @@ Automated market briefings powered by Claude Code agent teams. Two reports daily
 
 ## Schedule
 
-Both reports are run manually. Emails go to daryll@bigpicsolutions.com.
+Both reports are run manually. Emails go to the address in `.email-to` (git-ignored).
 
 | Report | Typical Time | Command |
 |--------|-------------|---------|
@@ -114,7 +114,7 @@ grep -i error ~/projects/trading-prep/logs/*-$(date +%Y-%m-%d).log
 
 - **MTA:** msmtp
 - **Provider:** Gmail (app password)
-- **Recipient:** daryll@bigpicsolutions.com
+- **Recipient:** the address in `.email-to` (git-ignored)
 - **Config file:** `~/.msmtprc`
 
 msmtp config structure:

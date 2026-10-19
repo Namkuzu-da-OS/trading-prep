@@ -16,7 +16,7 @@ set -euo pipefail
 # ── Configuration ────────────────────────────────────────────────────────────
 PREP_DIR="$HOME/projects/trading-prep"
 CLAUDE_BIN="$HOME/.local/bin/claude"
-EMAIL_TO="daryll@bigpicsolutions.com"
+EMAIL_TO="${PREP_EMAIL_TO:-$(cat "$PREP_DIR/.email-to" 2>/dev/null)}"  # recipient lives in git-ignored .email-to
 TIMEOUT_SECONDS=2700  # 45 minutes
 TODAY=$(date +%Y-%m-%d)
 REPORT_FILE="$PREP_DIR/reports/eod-report-${TODAY}.md"

@@ -3,3 +3,4 @@ logs/
 
 # Temp working files
 reports/tmp/
+.email-to
